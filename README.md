@@ -1,5 +1,3 @@
-# Java Learning Repository.
-My java programs are stored in this repository . You can refer topics here
 
 # Java Learning Repository 🚀
 
