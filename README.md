@@ -1,5 +1,3 @@
-# Java Learning Repository.
-My java programs are stored in this repository . You can refer topics here
 
 # Java Learning Repository 🚀
 
@@ -30,7 +28,7 @@ I . Introduction - introduction, skeleton of java programs and reading input fro
 03      CLA2.java                           A java program to demonstrate the Command line           18-09-2025              I
                                             arguments when integer is passed.
 
-04      Greeting.java                       Introducing the Scanner class and a program to           19-01-2025              I
+04      Greeting.java                       Introducing the Scanner class and a program to           19-09-2025              I
                                             greet the user by taking his/her name as input.
 
 
