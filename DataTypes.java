@@ -61,16 +61,16 @@ public class DataTypes {
 }
 
 /*  output :
-// Age : 20
-// DOB Year : 2025  
-// pin : 524004
-// population : 123456789
-// Price : 100.778
-// pi : 3.14159265
-// grade : A
-// Is java is fun ?? : true
-// Am i a bad coder ? : false
-// My name is : Sameer Basha
+Age : 20
+DOB Year : 2025  
+pin : 524004
+population : 123456789
+Price : 100.778
+pi : 3.14159265
+grade : A
+Is java is fun ?? : true
+Am i a bad coder ? : false
+My name is : Sameer Basha
 */
 
 /* point to remember :
