@@ -11,9 +11,9 @@ public class Greeting				// class name is Greeting
 	{
 		Scanner sc = new Scanner(System.in);		// creating an object of Scanner class to take input from user
 		String name;
-		System.out.println("Enter your sweet name");		// asking user to enter their name
+		System.out.println("Please enter your sweet name :");		// asking user to enter their name
 		name = sc.nextLine();								// reading the name entered by user
-		System.out.println("Hello ! welcome "+name);		// greeting the user with their name
+		System.out.println("Hello ! welcome " + name);		// greeting the user with their name
 		sc.close();											// closing the scanner object
 	}
 }
