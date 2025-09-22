@@ -4,7 +4,7 @@ public class CLA2 {
     {
         System.out.println("Demonstration of Command line arguments when integer is passed");
         int n = Integer.parseInt(args[0]);                          // converting string to integer
-        System.out.println("You passed integer : " +n);             // printing the integer
+        System.out.println("You passed an integer : " + n);             // printing the integer
     }
 }
 
@@ -16,7 +16,7 @@ public class CLA2 {
 // You passed integer : 10
 
 
-// Point to remember :
+// Points to remember :
 
 /* 
 ☆ Command line arguments are always passed as strings
