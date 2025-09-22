@@ -5,7 +5,7 @@
 
 public class MyFirst{                                  // class name is MyFirst
     public static void main(String [] args){           // main method     
-        System.out.println("Hello, Sameer!");        // printing a string to the console   
+        System.out.println("Hello , Sameer!");        // printing a string to the console   
     }
 }
 
