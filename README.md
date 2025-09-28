@@ -24,7 +24,7 @@ Flow of my **java journey**
 
 | S.No | Program File                 | Description                                                           | Date Created | Flow |
 |------|------------------------------|------------------------------------------------------------------------|-------------|------|
-| 01   | MyFirst.java                 | A simple Java program to demonstrate printing a message.               | 18-09-2025  | I    |
+| 01   | (MyFirst.java)[MyFirst.java/]| A simple Java program to demonstrate printing a message.               | 18-09-2025  | I    |
 | 02   | CommandLIneArguments.java    | Demonstrates command-line arguments when a **string** is passed.       | 18-09-2025  | I    |
 | 03   | CLA2.java                    | Demonstrates command-line arguments when an **integer** is passed.     | 18-09-2025  | I    |
 | 04   | Greeting.java                | Uses the `Scanner` class to greet the user by taking their name input. | 19-09-2025  | I    |
