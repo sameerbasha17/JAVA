@@ -36,6 +36,8 @@ Flow of my **java journey**
 | 09   | [LiteralsPart01](LiteralsPart01.java/)          | Demonstrates **all types of Java literals** (integer, floating-point, char, string, boolean, null) with examples | 24-09-2025 | II |
 | 10   | [LiteralsPart02](LiteralsPart02.java/) |Demonstrates Java numeric literals across **binary, octal, decimal,** and ** hexadecimal systems**, shows underscores for **readability**, and uses `printf` for **formatted output**. | 233-09-2025 | II |
 | 11   | [DataTypes03](DataTypes.java/) | Converts **integers** (positive & negative) to binary, octal, and hexadecimal representations.| 25-09-2025 | II |
+| 12   | [Introduction to Arthimetic Operators ](ArthimeticOperators.java/) | Demonstrates Java arithmetic operators (`+`, `-`, `*`, `/`, `%`) with various data types, char arithmetic, operator precedence, and type casting for precise division. | 28-09-2025 | III |
+
 
 
 
