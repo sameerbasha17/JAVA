@@ -1,8 +1,5 @@
 // Demonstration of Command line arguments
 
-import java.lang.*;					// by default this package is imported
-import java.util.*;					// this package is imported explicitly  Note:Add Java example for reading command-line arguments
-
 public class CommandLineArguments          
 {
 	public static void main(String [] args)
