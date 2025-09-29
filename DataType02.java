@@ -15,8 +15,8 @@
  ☆ Byte is a wrapper class for byte data type
  */
 
-import java.lang.*;
-public class DataType02				// class name is PrimitiveDT
+
+public class DataType02				//class name
 {
 	public static void main (String [] args )
 	{
@@ -45,7 +45,7 @@ public class DataType02				// class name is PrimitiveDT
 C:\Users\Sameer\Desktop>javap java.lang.Integer
 Compiled from "Integer.java"
 public final class java.lang.Integer extends java.lang.Number implements java.lang.Comparable<java.lang.Integer>, java.lang.constant.Constable, java.lang.constant.ConstantDesc {
-  public static final int MIN_VALUE;
+  public static final int MIN_VALUE;   
   public static final int MAX_VALUE;
   public static final java.lang.Class<java.lang.Integer> TYPE;
   static final char[] digits;
@@ -117,7 +117,4 @@ public final class java.lang.Integer extends java.lang.Number implements java.la
  
  */
 
- /* This is a java program to use the members of wrapper class to find size or range etc..of primitive data type
-  * Author : Sameer Basha
-  * Date : 21-09-2025
- */
+ // This is a java program to use the members of wrapper class to find size or range etc..of primitive data type 
