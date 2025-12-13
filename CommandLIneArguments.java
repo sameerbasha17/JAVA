@@ -10,8 +10,8 @@ public class CommandLineArguments
 	}
 }
 
-// To compile : javac CommandLIneArguments.java
-// To run : java CommandLIneArguments Hello World
+// To compile : javac CommandLineArguments.java
+// To run : java CommandLineArguments Hello World
 
 
 // Output :
