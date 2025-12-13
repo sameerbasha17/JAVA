@@ -28,3 +28,34 @@ public class RootsOfQuadraticEquation
 
 	}
 }
+
+/* 
+Output :
+========
+Case - 1 :
+---------
+Enter Coefficient of x^2 : 1
+Enter Coefficient of x : 5
+Enter Constant(Coefficient of x^0) : 6
+Root 1 : -2.0
+Root 2 : -3.0
+
+Case - 2 :
+----------
+Enter Coefficient of x^2 : 1   
+Enter Coefficient of x : 1
+Enter Constant(Coefficient of x^0) : 1
+Root 1 : NaN
+Root 2 : NaN
+
+(here NaN means Not a Number)
+
+Case - 3 :
+----------
+Enter Coefficient of x^2 : 1
+Enter Coefficient of x : -4
+Enter Constant(Coefficient of x^0) : 4
+Root 1 : 2.0
+Root 2 : 2.0
+
+*/
