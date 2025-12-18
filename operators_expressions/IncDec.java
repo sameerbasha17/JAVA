@@ -43,3 +43,26 @@ public class IncDec
 
     }
 }
+
+/*
+Output :
+========
+a = 5 
+a++ = 6
+
+b = 7
+++b = 8
+
+x = 9 and y = 0
+If y = x++ then x = 10 and y = 9
+
+p = 2 , q = 3 and r = 0
+If r = p++ + ++q + ++p Then r = 10
+
+b = 9 where is a variable of byte datatype.
+If b=b++ then b = 10
+Here we don't get any error like 'Possible lossy conversion from int to byte'. It's because, we use post increment operater which works on value i.e it don't add integer '1' externally
+
+c = 'A', where c is a variable of char datatype
+If c=c++ then c = B
+*/

@@ -14,3 +14,19 @@ public class EscapeSequence
         System.out.print("helloo\rmadam");
     }
 }
+
+/* 
+Output :
+========
+Hello   Sameer.
+' Hello '       "Sameer"
+Hi      i am
+Sameer
+A
+Z
+\hiBasha
+Hellhi
+Hi
+sir
+madamo
+*/
