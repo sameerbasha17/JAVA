@@ -1,0 +1,99 @@
+import numpy as np
+from collections import Counter
+# Step 1: Define the dataset (Study Hours, Sleep Hours, Result)
+data = np.array([
+ [8, 6, 'Pass'],
+ [7, 7, 'Pass'],
+ [6, 8, 'Pass'],
+ [3, 6, 'Fail'],
+ [2, 5, 'Fail'],
+ [1, 4, 'Fail'] ])
+# Step 2: Get user input for new student data
+try:
+ study_hours = int(input("Enter study hours of the new student: "))
+ sleep_hours = int(input("Enter sleep hours of the new student: "))
+except ValueError:
+ print("Please enter valid integer values.")
+ exit()
+new_student = np.array([study_hours, sleep_hours])
+# Step 3: Compute Euclidean distances
+def euclidean_distance(point1, point2):
+ return np.sqrt(np.sum((point1 - point2) ** 2))
+distances = []
+for student in data:
+ study, sleep, label = student
+ point = np.array([int(study), int(sleep)])
+ distance = euclidean_distance(new_student, point)
+ distances.append((distance, label))
+# Step 4: Sort distances and select K nearest neighbors (K=3)
+K = 3
+distances.sort() # Sort based on distance
+nearest_neighbors = distances[:K]
+# Step 5: Perform Majority Voting
+labels = [label for _, label in nearest_neighbors]
+prediction = Counter(labels).most_common(1)[0][0] # Most common class
+# Step 6: Display results
+print(f"\nNew Student (Study Hours: {new_student[0]}, Sleep Hours: {new_student[1]}) is 
+classified as: {prediction}")
+Input & Output:
+Enter study hours of the new student: 5
+Enter sleep hours of the new student: 7
+New Student (Study Hours: 5, Sleep Hours: 7) is classified as: Pass
+
+
+--------------------------
+import numpy as np
+import pandas as pd
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import matplotlib.pyplot as plt
+# Step 1: Create the dataset
+data = {
+ 'Hours Studied': [1, 2, 3, 4, 5, 7, 8],
+ 'Exam Score': [50, 55, 60, 65, 70, 80, 85]
+}
+# Convert to a DataFrame
+df = pd.DataFrame(data)
+# Step 2: Define the features (X) and target (y)
+X = df[['Hours Studied']] # Features (input)
+y = df['Exam Score'] # Target (output)
+# Step 3: Create the KNN Regressor model
+knn = KNeighborsRegressor(n_neighbors=3)
+# Step 4: Train the model
+knn.fit(X, y)
+# Step 5: Take user input for study hours
+try:
+ hours = float(input("Enter the number of hours studied: "))
+ predicted_score = knn.predict([[hours]])
+ print(f"\nPredicted exam score for {hours:.2f} hours of study: {predicted_score[0]:.2f}")
+ # Step 6: Evaluate the model using regression metrics
+ y_pred = knn.predict(X) # Predictions for the training set
+ mae = mean_absolute_error(y, y_pred)
+ mse = mean_squared_error(y, y_pred)
+ r2 = r2_score(y, y_pred)
+ psnr = calculate_psnr(y, y_pred)
+ print("\nRegression Evaluation Metrics:")
+ print(f"Mean Absolute Error (MAE): {mae:.2f}")
+ print(f"Mean Squared Error (MSE): {mse:.2f}")
+ print(f"R² Score: {r2:.2f}")
+ print(f"Peak Signal-to-Noise Ratio (PSNR): {psnr:.2f} dB")
+ # Step 7: Plot the dataset and prediction
+ plt.scatter(df['Hours Studied'], df['Exam Score'], color='blue', label='Actual Data')
+ plt.scatter(hours, predicted_score, color='red', label='Predicted Score', marker='x', s=100)
+ plt.plot(df['Hours Studied'], y_pred, color='green', linestyle='dashed', label='Regression Line')
+ plt.xlabel('Hours Studied')
+ plt.ylabel('Exam Score')
+ plt.title('KNN Regression: Hours Studied vs Exam Score')
+ plt.legend()
+ plt.show()
+except ValueError:
+print("Invalid input! Please enter a numeric value.")
+Input:
+Enter the number of hours studied: 6
+Output:
+Predicted exam score for 6.00 hours of study: 71.67
+Regression Evaluation Metrics:
+Mean Absolute Error (MAE): 2.62
+Mean Squared Error (MSE): 13.89
+R² Score: 0.90
+Peak Signal-to-Noise Ratio (PSNR): 27.16 dB
