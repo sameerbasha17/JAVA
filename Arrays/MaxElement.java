@@ -21,7 +21,7 @@ public class MaxElement
             System.out.print(x + " ");
         }
 
-        int max = 0;
+        int max = arr[0];
 
         for(int x : arr)
         {
