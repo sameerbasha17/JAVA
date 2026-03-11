@@ -4,7 +4,7 @@ public class Validate
 {
     public static void main(String [] args)
     {
-        String name = "Vishnu1"; 
+        String name = "Vishnu T"; 
         if(validate(name))
             System.out.println("The name " + name + " is a valid name");
         else
@@ -16,10 +16,7 @@ public class Validate
 
     static boolean validate(String n)
     {
-        if(n.matches("[a-zA-Z]+"))
-            return true;
-        else
-            return false;
+        return n.matches("[a-zA-Z\\s]+");
     }
 
     static boolean validate(int num)
