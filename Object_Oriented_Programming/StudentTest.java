@@ -35,7 +35,7 @@ class Student
 
     public double average()
     {
-        return total()/3;
+        return total()/3.0;
     }
 
     public char grade()
