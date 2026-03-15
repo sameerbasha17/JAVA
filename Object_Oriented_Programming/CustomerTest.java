@@ -67,3 +67,27 @@ class Customer
     public Customer()
     {}
 }
+
+/*
+Output : 
+=========
+Customer - 1 : 
+====================
+Customer ID : A001
+Customer Name : Tharun
+Address : 4-17, South Mopur, Nellore, 524004
+Phno : 1234567890
+
+Customer ID : A001
+Customer Name : Tharun
+Address : 1-99,Komarapudi, Andhra Kesari Nagar, Nellore, 524004
+Phno : 8885787828
+
+Customer - 2 :
+====================
+Customer ID : null
+Customer Name : null
+Address : null
+Phno : null
+
+*/
