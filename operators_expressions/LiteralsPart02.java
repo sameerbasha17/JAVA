@@ -40,6 +40,9 @@ public class LiteralsPart02
         ✰ float invalid4 = 3._14F;        // Invalid: cannot be adjacent to a decimal point
         ✰ int invalid5 = 0x_1A;          // Invalid: cannot be adjacent to the 'x' in hexadecimal literals
          */
+
+        int xy = 7_9;
+        System.out.print(xy);
     }
 }
 
@@ -49,7 +52,7 @@ public class LiteralsPart02
 /* Output :
 
  --- Integer Literals in Different Number Systems ---
-vDecimal Literal : 10
+ Decimal Literal : 10
  Binary literal : 10
  Ocatal Literal : 10
  Hexadecimal Literal : 10
@@ -59,4 +62,5 @@ vDecimal Literal : 10
  Credit Card Number : 1234567890123456
  Pi : 3.14150
  Avogadro's Number : 6.02214076e+23
+ 79
  */
