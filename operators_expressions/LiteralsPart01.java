@@ -42,7 +42,7 @@ public class LiteralsPart01 {
         System.out.println("double d : " + d);
 
 
-        // For the datatype - char the default Literal is character.
+        // For the datatype - char the Literal is character.
 
         System.out.println("\n --- Character Literals ---");
 
@@ -50,7 +50,7 @@ public class LiteralsPart01 {
         System.out.println("char ch : " + ch);
 
 
-        // For the datatype - boolean the default Literal is boolean(true or false).
+        // For the datatype - boolean the  Literal is boolean(true or false).
 
         System.out.println("\n --- Boolean Literals ---");
 
