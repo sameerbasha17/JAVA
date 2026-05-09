@@ -76,6 +76,8 @@ public class Widening_Narrowing
         b = (byte)s;
         i = (int) f;
         c = (char) b;
+        char ch = (char)-342553254532543265L;
+        System.out.println(ch);
         f = (float) d;
         //bo = (boolean) i; i = (int) bo;
     }
