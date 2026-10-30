@@ -15,6 +15,17 @@ class Account
     private String dob;
     protected long balance; // protected keyword - accessible to it's class and subclass.
 
+    // Constuctor
+    public Account(String accNo, String name, String phno, String address, String dob, long balance)
+    {
+        this.accNo = accNo;
+        this.name = name;
+        this.phno = phno;
+        this.address = address;
+        this.dob = dob;
+        this.balance = balance;
+    }
+
     // Property methods
     public String getAccNo() { return accNo; }
     public String getName() { return name; }
@@ -32,16 +43,7 @@ class Account
         this.phno = phno;
     }
 
-    // Constuctor
-    public Account(String accNo, String name, String phno, String address, String dob, long balance)
-    {
-        this.accNo = accNo;
-        this.name = name;
-        this.phno = phno;
-        this.address = address;
-        this.dob = dob;
-        this.balance = balance;
-    }
+    
 
     public void close()
     {
@@ -52,6 +54,10 @@ class Account
 
 class SavingsAccount extends Account
 {
+    public SavingsAccount(String accNo, String name, String phno, String address, String dob, long balance)
+    {
+        super(accNo,  name,  phno,  address,  dob, balance);
+    }
     public void deposit(long amount)
     {
         balance += amount;
@@ -64,6 +70,11 @@ class SavingsAccount extends Account
 
 class LoanAccount extends Account
 {
+    public LoanAccount(String accNo, String name, String phno, String address, String dob, long balance)
+    {
+        super(accNo,  name,  phno,  address,  dob, balance);
+    }
+
     public void payEMI(long amount)
     {
         balance -= amount;
